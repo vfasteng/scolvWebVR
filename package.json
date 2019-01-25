@@ -1,0 +1,23 @@
+{
+  "name": "aframe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "aframe-leap-hands": "^0.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Micspr/scolvWebVR.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Micspr/scolvWebVR/issues"
+  },
+  "homepage": "https://github.com/Micspr/scolvWebVR#readme"
+}
