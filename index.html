@@ -2,6 +2,7 @@
   <head>
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
     <script src="//unpkg.com/aframe-leap-hands/dist/aframe-leap-hands.umd.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.2.0/dist/aframe-extras.min.js"></script>
     <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.3.0/dist/aframe-physics-system.min.js"></script>
     <script>
       AFRAME.registerComponent('holdable', {
@@ -33,8 +34,8 @@
   </head>
   <body>
     <a-scene leap="vr: true">
-      <a-box dynamic-body="shape: box" position="0 2 0" rotation="0 45 0" color="#4CC3D9" width="0.1" height="0.1" holdable></a-box>
-      <a-plane static-body="mass: 1" position="0 1 0" rotation="-90 0 0" width="400" height="400" color="#7BC8A4"></a-plane>
+      <a-box dynamic-body="shape: box" position="0 2 0" color="#4CC3D9" width="0.1" height="0.1" depth="0.1" holdable></a-box>
+      <a-plane static-body position="0 1 0" rotation="-90 0 0" width="400" height="400" color="#7BC8A4"></a-plane>
       <a-entity camera="near: 0.01" look-controls position="0 1.5 0">
         <a-entity  leap-hand="hand: left; enablePhysics: true"></a-entity>
         <a-entity  leap-hand="hand: right; enablePhysics: true"></a-entity>
